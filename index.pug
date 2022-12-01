@@ -1,0 +1,21 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Practice local storage
+  link(rel='stylesheet' href='styles/style.css')
+  script(src='scripts/custom.js' defer='')
+.section-languages
+  img(src='assets/JS.png' alt='JS Logo')
+  h1 Local Storage Languages
+  .input-btn
+    form(onsubmit='addLanguage()')
+      input(type='text' placeholder='Add your Language')
+  .list-languages
+    ul
+  button.remove-all(onclick='deleteAllLanguages()') Remove all
+footer
+  p.author
+    | Hecho por
+    a(href='https://github.com/JoseBG-spec' target='_blank') JoseBG-spec &#x1F913;

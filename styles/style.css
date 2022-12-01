@@ -1,0 +1,122 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2c3e50;
+}
+
+.section-languages{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-languages img{
+    width: 30%;
+    margin: 20px;
+}
+
+.section-languages h1{
+    color: white;
+}
+
+.input-btn{
+    display: flex;
+    margin-bottom: 3%;
+}
+.input-btn form{
+    width: 100%;
+}
+.input-btn input{
+    width: 100%;
+    height: 34px;
+    border-radius: none;
+    border-color: yellow;
+    font-size: 19px;
+    padding-left: 17px;
+}
+.list-languages{
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+}
+.list-languages ul{
+    padding-left: 0;
+    margin: 0 13px;
+    text-align: center;
+}
+
+.list-languages li{
+    font-size: 21px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    padding: 5px 10px;
+    color: white;    
+    list-style-position:inside;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: #2c3e50;
+}
+
+.list-languages li span{
+    background-color: yellow;
+    border-radius: 50%;
+    padding: 1px 8px; 
+    color: black;
+    cursor: pointer;
+    height: 26px;
+}
+.list-languages li span:hover{
+    background-color: red;
+}
+
+/*remove all btn*/
+.remove-all{
+    border-radius: none;
+    border-color: yellow;
+    background-color: yellow;
+    color: black;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 9px 16px;
+}
+.remove-all:hover{
+    background-color: yellowgreen;
+    color: white;
+    transition: all 0.5s 0s ease;
+}
+.remove-all:not(:hover){
+
+    transition: all 0.5s 0s ease;
+}
+
+/*responsive*/
+@media only screen and (max-width: 768px){
+    .section-languages{
+        width: 90%;
+    }
+}
+
+/* validation message */
+.error {
+    color: red;
+    text-align: left;
+    background-color: #ffe5e5;
+    padding: 2px 13px;
+    border: solid 2px red;
+    border-radius: 2px;
+}
+
+p.author {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    gap: 7px;
+    color: white;
+}
+p.author a {
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+}
